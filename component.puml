@@ -1,0 +1,23 @@
+@startuml
+skinparam monochrome true
+
+actor user
+
+rectangle "Cluster" {
+
+    rectangle "Ingress" as i
+
+    rectangle "Service: simple-service" as s {
+        rectangle "Pod: nginx" as n
+        rectangle "Pod: app" as a
+
+
+
+    }
+}
+
+user -- i
+i -- s
+n -- a
+
+@enduml
