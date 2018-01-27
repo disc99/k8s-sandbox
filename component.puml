@@ -10,9 +10,6 @@ rectangle "Cluster" {
     rectangle "Service: simple-service" as s {
         rectangle "Pod: nginx" as n
         rectangle "Pod: app" as a
-
-
-
     }
 }
 
